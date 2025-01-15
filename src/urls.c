@@ -8,7 +8,7 @@ ROUTE routes[] = {
     {"/game", "GET", online_game_view, 3},
     {"/getGame", "POST", get_game_view, 4},  
     {"/sendMove", "POST",send_move_view, 5},
-    {"/GetComputerMove", "POST", get_computer_move_view, 5}
+    {"/GetComputerMove", "POST", get_computer_move_view, 6}
 
 };
 int num_routes = sizeof(routes) / sizeof(ROUTE);
