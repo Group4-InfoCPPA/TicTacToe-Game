@@ -83,7 +83,7 @@ RESPONSE manage_request(REQUEST request, ROUTE routes[], int num_routes, socket_
 
     strcpy(response.content_type, "text/html; charset=utf-8");
     if (strncmp(request.url, "/static/", 8) == 0) {
-        char filepath[256] = "./static";
+        char filepath[256] = "../static";
         strncat(filepath, request.url + 7, sizeof(filepath) - strlen(filepath) - 1);
 
         validate_static_path(filepath);
