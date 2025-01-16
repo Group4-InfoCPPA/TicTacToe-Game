@@ -124,7 +124,7 @@ Par défaut, le serveur écoute sur le port **8080**.
 
 ## 🖋 Auteur
 
-Projet réalisé par **le Groupe 4**.  
+Projet réalisé par **le Groupe 7**.  
 Pour toute question ou suggestion, contactez-moi à **[votre.email@example.com]**.
 
 ---
