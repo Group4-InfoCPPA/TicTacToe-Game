@@ -60,7 +60,7 @@ Clonez le dépôt Git et accédez au répertoire du projet :
 
 ```bash
 git clone https://github.com/Group4-InfoCPPA/TicTacToe-Game.git
-cd LastTryLastHope
+cd TicTacToe-Game
 ```
 
 ### 3. Compiler le projet
