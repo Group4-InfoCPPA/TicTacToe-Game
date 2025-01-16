@@ -27,7 +27,7 @@ Bienvenue dans **HTTP Server en C**, un projet développé entièrement en langa
 Voici une vue d'ensemble de la structure du projet :
 
 ```
-LastTryLastHope/
+/
 ├── src/                    # Code source du projet
 │   ├── base_utils.c        # Fonctions utilitaires générales
 │   ├── server.c            # Code principal du serveur HTTP
@@ -59,7 +59,7 @@ Suivez ces étapes pour installer et exécuter le projet :
 Clonez le dépôt Git et accédez au répertoire du projet :
 
 ```bash
-git clone https://github.com/votre-repo/LastTryLastHope.git
+git clone https://github.com/Group4-InfoCPPA/TicTacToe-Game.git
 cd LastTryLastHope
 ```
 
@@ -125,7 +125,7 @@ Par défaut, le serveur écoute sur le port **8080**.
 ## 🖋 Auteur
 
 Projet réalisé par **le Groupe 7**.  
-Pour toute question ou suggestion, contactez-moi à **[votre.email@example.com]**.
+
 
 ---
 
