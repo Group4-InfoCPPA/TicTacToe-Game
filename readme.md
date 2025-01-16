@@ -84,7 +84,7 @@ Par défaut, le serveur écoute sur le port **8080**.
 ### 5. Accéder au jeu
 
 - Ouvrez un navigateur web.
-- Rendez-vous sur [http://localhost:8080](http://localhost:1111) pour accéder à l'interface du jeu.
+- Rendez-vous sur [http://localhost:1111](http://localhost:1111) pour accéder à l'interface du jeu.
 
 ---
 
