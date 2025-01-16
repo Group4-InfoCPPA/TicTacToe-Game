@@ -86,7 +86,7 @@ RESPONSE manage_request(REQUEST request, ROUTE routes[], int num_routes, socket_
         char filepath[256] = "../static";
         strncat(filepath, request.url + 7, sizeof(filepath) - strlen(filepath) - 1);
 
-        validate_static_path(filepath);
+        //validate_static_path(filepath);
 
         int bytes_read = read_file(filepath, &response.file, &response.file_size);
         if (bytes_read >= 0) {
