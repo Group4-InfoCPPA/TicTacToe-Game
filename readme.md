@@ -126,7 +126,6 @@ Par défaut, le serveur écoute sur le port **8080**.
 
 Projet réalisé par **le Groupe 7**.  
 
-
 ---
 
 ## 📄 Licence
