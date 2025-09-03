@@ -1,8 +1,7 @@
 
 # HTTP Server en C avec Tic Tac Toe 🎮
 
-Bienvenue dans **HTTP Server en C**, un projet développé entièrement en langage C sans aucune bibliothèque externe, offrant une plateforme fluide et conviviale pour jouer au jeu classique **Tic Tac Toe** ! 🚀
-
+Bienvenue dans **HTTP Server en C**, un projet développé entièrement en langage C sans aucune bibliothèque externe, offrant une plateforme fluide et conviviale pour jouer au jeu classique **Tic Tac Toe** ! 
 ---
 
 ## 🛠 Fonctionnalités principales
