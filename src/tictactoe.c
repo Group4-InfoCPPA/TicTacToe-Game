@@ -67,6 +67,7 @@ couple findTheBest(int n, int grid[n][n], int player) {
                 if (score > maxScore) {
                     maxScore = score;
                     bestMove = (couple){i, j};
+                    if(maxScore == -3 * VERY_BAD_SCORE) return bestMove;
                 }
             }
         }
@@ -84,3 +85,4 @@ int find_player(int n,int grid[][n]){
     }
     return s==1?-1:1;
 }
+
