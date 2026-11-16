@@ -83,7 +83,7 @@ RESPONSE manage_request(REQUEST request, ROUTE routes[], int num_routes, socket_
 
     strcpy(response.content_type, "text/html; charset=utf-8");
     if (strncmp(request.url, "/static/", 8) == 0) {
-        char filepath[256] = "../static";
+        char filepath[256] = STATIC_DIR;
         strncat(filepath, request.url + 7, sizeof(filepath) - strlen(filepath) - 1);
 
         //validate_static_path(filepath);
@@ -122,7 +122,7 @@ RESPONSE manage_request(REQUEST request, ROUTE routes[], int num_routes, socket_
     strcpy(response.message, "Not Found");
     response.file = render("404.html");
     response.file_size = strlen(response.file);
-
+    // printf("response : %s\n", response.file);
     return response;
 }
 
@@ -159,9 +159,10 @@ void *handle_client(void *client_sock_ptr) {
         REQUEST request;
         parse_request(buffer, &request);
 
-        // printf("--> : %s %s\n", request.method, request.url);
+        printf("--> : %s %s\n", request.method, request.url);
 
         RESPONSE response = manage_request(request, routes, num_routes, client_sock);
+        // printf("response : %s \n", response.body);
         send_response(client_sock, response);
     // Sleep(10000);
 
@@ -193,7 +194,7 @@ int read_file(const char *filepath, char **buffer, size_t *buffer_size) {
 char* render(const char *view_name) {
     char filepath[256];
     snprintf(filepath, sizeof(filepath), "%s/%s", VIEWS_DIR, view_name);
-
+    // printf("file : %s\n", filepath);
     char *content;
     size_t content_size;
     if (read_file(filepath, &content, &content_size) < 0) {

@@ -33,7 +33,7 @@ int main() {
         ErrorMess("Échec de l'écoute.");
     }
 
-    printf("Serveur démarré sur le port %d...\n", PORT);
+    printf("Serveur demarre sur le port %d...\n", PORT);
 
     while (1) {
         struct sockaddr_in client_addr;
